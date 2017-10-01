@@ -59,15 +59,15 @@ Don't do the job that an automated tool should do. It is a waste of everyone's t
 
 Type safety is worth it.
 
-### Don't use a language with a pendantic type system
+### Complicated type systems don't scale to teams
 
-A simple type system is sufficient. Whatever additional type safety you gain, you will lose it and more in readability and accessibility to your codebase.
+A simple type system is sufficient. Languages with more pedantic type systems may be appropriate in very specific situations, but sacrifice readability and accessibility in a team setting.
 
 ### Optimize for human readability
 
 Make the purpose of your code obvious to the reader. Assume the reader is inexperienced.
 
-Code that is readable is easier to update and easier to fix, especially by someone who was not the orignal author.
+Code that is readable is easier to update and easier to fix, especially by someone who was not the original author.
 
 All else equal, fewer lines of code is better, up until a point. Past that point code becomes too dense to read fluently. Don't pass that point.
 
@@ -75,7 +75,7 @@ All else equal, fewer lines of code is better, up until a point. Past that point
 
 Write documentation in prose. Explain WHAT (the end goal) and WHY. The code itself is the HOW.
 
-Not everything needs to be documented, but many things do. For example, if a function is short enough and well named it doesn't need to be documented.
+Not everything needs to be documented, but many things do. If a function is short enough and well named it doesn't need to be documented.
 
 ### Format your code
 

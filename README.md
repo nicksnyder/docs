@@ -26,33 +26,6 @@ Implementation is easy to change. API's are not.
 
 Good APIs are also easier to understand and use.
 
-## Code review
-
-### Review code because it helps you learn
-
-Reviewing code is like traveling. It exposes you to new ideas that make you a well rounded engineer.
-
-Reviewing good code will help you understand what makes code good.
-Reviewing bad code will help you understand what makes code bad.
-
-### Ask for your code to be reviewed because it helps you learn
-
-Nobody writes perfect code. It is useful to get a second opinion to see which parts of your code are hard to understand.
-
-### Ask, don't tell (be humble)
-
-If you don't understand something, ask for clarification. Either you will learn something or the author will realize that they don't know the answer either. In the former case more documentation may be appropriate; in the latter case there is probably an improvement to the code that could be made.
-
-If you would do something differently, propose an alternative and see what the author thinks. Maybe the author already considered your idea and had a reason to not prefer it, or maybe they didn't.
-
-### Understand the code you are reviewing
-
-You job as a code reviewer is to understand and to help improve the code.
-
-### Leave the linting to linters
-
-Don't do the job that an automated tool should do. It is a waste of everyone's time. If you are spending time making lint comments in code reviews, invest that time adding automated lint tools instead.
-
 ## Code style
 
 ### Compile your code
@@ -83,10 +56,6 @@ It doesn't matter what the format it, just that the formatting is consistent.
 
 If you don't have an autmatic formatter (you should), match the formatting of the codebase that you are contributing to.
 
-### Be kind to your reviewer
-
-Changes should be small and do one thing. If you need to do multiple things, split it up into multiple changes that can be reviewed independently.
-
 ### Test your code when it helps you
 
 |  | Easy to test | Hard to test |
@@ -103,21 +72,71 @@ Code is worth testing if...
 
 Whatever language you are writing in, write it like everyone else writes it.
 
+## Code review
+
+### Ask for your code to be reviewed because it helps you learn
+
+Nobody writes perfect code. It is useful to get a second opinion to see which parts of your code are hard to understand.
+
+### Be kind to your reviewer
+
+Changes should be small and do one thing. If you need to do multiple things, split it up into multiple changes that can be reviewed independently.
+
+### Review code because it helps you learn
+
+Reviewing code is like traveling. It exposes you to new ideas that make you a well rounded engineer.
+
+Reviewing good code will help you understand what makes code good.
+Reviewing bad code will help you understand what makes code bad.
+
+### Ask, don't tell (be humble)
+
+If you don't understand something, ask for clarification. Either you will learn something or the author will realize that they don't know the answer either. In the former case more documentation may be appropriate; in the latter case there is probably an improvement to the code that could be made.
+
+If you would do something differently, propose an alternative and see what the author thinks. Maybe the author already considered your idea and had a reason to not prefer it, or maybe they didn't.
+
+### Understand the code you are reviewing
+
+You job as a code reviewer is to understand and to help improve the code.
+
+### Don't be a gatekeeper
+
+Your job is not to ensure that the code is perfect.
+Your job is not to ensure that the code is the way you would write it.
+
+### Leave the linting to linters
+
+Don't do the job that an automated tool should do. It is a waste of everyone's time. If you are spending time making lint comments in code reviews, invest that time adding automated lint tools instead.
+
+### Don't spend more time discussing something than it would take to fix
+
+Instead of suggesting a fix to code, just make the change yourself.
+
+### Small incremental improvements are good
+
+Don't fault the author for not fixing things with code they might be touching. Sometimes untangling code quickly snowballs into a large change which would derail the author from their original intent. If you notice a problem during code review, politely ask the author to add a TODO for the problem you recognized.
+
+### Trust the author by default
+
+As a reviewer, you don't know all the tradeoffs that author took into account when making their change. Assume there are reasons. It is ok to ask what those reasons are. If you disagree with those reasons, read [these](#Choose-your-battles) [sections](Don't-spend-more-time-discussing-something-than-it-would-take-to-fix) 
+
+### Choose your battles
+
+Code is never perfect, and code someone else writes will usually be different than how you would write it. If you comment on everything you would do differently you are going to burn a lot of time and relationships. Focus on what is important.
+
 ## Personal development
 
 ### Solve problems, don't create them
 
 Your job is to solve problems. Pointing out a problem is just the first step. The second, and more important, step is to propose a solution.
 
-Junior
+Adversarial and exhausting
 - "Don't do X"
 - "We can't do X because Y"
 
-Senior
-- "Don't to X, do Y instead"
+Collaborative and productive:
+- "Y would be better than X because Z"
 - "If we do X we also need to do Z because Y"
-
-The former is adversarial and exhausting. The latter is collaborative and productive.
 
 ### Learn new programming languages
 

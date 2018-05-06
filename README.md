@@ -12,7 +12,7 @@ If you try to anticipate the future too much, you will be wrong and will have wa
 
 Build something, launch, then iterate based on real usage/feedback/data.
 
-Don't try to theorycraft the perfect architecture/product from the beginning.
+Understand how your system might need to evolve in the future, but don't try to theorycraft the perfect architecture/product from the beginning.
 
 ### Use tech that you are familiar with
 
@@ -58,15 +58,10 @@ If you don't have an autmatic formatter (you should), match the formatting of th
 
 ### Test your code when it helps you
 
-|  | Easy to test | Hard to test |
-|--|--------------|--------------|
-| **Worth testing** | Do it. | If you have time. |
-| **Not worth testing** | Don't do it. | Don't do it. |
-
 Code is worth testing if...
 - Tests help you verify that your implementation is correct when you are writing it.
 - The code keeps breaking and you are spending a lot of time maintaining it.
-- The correctness of the code is of particular importance to your application.
+- The correctness of the code is of particular importance to your application (e.g. security).
 
 ### Write idiomatic code
 
@@ -74,37 +69,44 @@ Whatever language you are writing in, write it like everyone else writes it.
 
 ## Code review
 
-### Ask for your code to be reviewed because it helps you learn
+### Get your code reviewed because it helps you and it helps your team
 
-Nobody writes perfect code. It is useful to get a second opinion to see which parts of your code are hard to understand.
+Getting feedback on your code helps you learn how to write better code. It also helps your team fix and extend your code in the future without breaking it.
 
-### Be kind to your reviewer
+### Code reviews should be an appropriate size
 
-Changes should be small and do one thing. If you need to do multiple things, split it up into multiple changes that can be reviewed independently.
+Code reviews should be the smallest possible diff that makes sense (sometimes this can still be fairly large). If you need to do multiple things, split it up into multiple changes that can be reviewed independently.
 
-### Review code because it helps you learn
+### Review code because it helps you and it helps your team
 
 Reviewing code is like traveling. It exposes you to new ideas that make you a well rounded engineer.
 
 Reviewing good code will help you understand what makes code good.
 Reviewing bad code will help you understand what makes code bad.
 
-### Ask, don't tell (be humble)
+A good code review evaluates
+* Correctness
+  * Is this the right solution to the problem?
+  * Are there any defects?
+* Readability
+  * Is the code easy to understand?
+
+### Be humble
 
 If you don't understand something, ask for clarification. Either you will learn something or the author will realize that they don't know the answer either. In the former case more documentation may be appropriate; in the latter case there is probably an improvement to the code that could be made.
 
 If you would do something differently, propose an alternative and see what the author thinks. Maybe the author already considered your idea and had a reason to not prefer it, or maybe they didn't.
 
-### Understand the code you are reviewing
+### Be helpful
 
-You job as a code reviewer is to understand and to help improve the code.
+You job is to understand and to help improve the code.
 
 ### Don't be a gatekeeper
 
 Your job is not to ensure that the code is perfect.
 Your job is not to ensure that the code is the way you would write it.
 
-### Leave the linting to linters
+### Don't be a tool
 
 Don't do the job that an automated tool should do. It is a waste of everyone's time. If you are spending time making lint comments in code reviews, invest that time adding automated lint tools instead.
 
@@ -112,13 +114,15 @@ Don't do the job that an automated tool should do. It is a waste of everyone's t
 
 Instead of suggesting a fix to code, just make the change yourself.
 
+If there are two ways to do something, and it is easy to switch between them, then it doesn't matter what you choose the first time (you can switch later).
+
 ### Small incremental improvements are good
 
-Don't fault the author for not fixing things with code they might be touching. Sometimes untangling code quickly snowballs into a large change which would derail the author from their original intent. If you notice a problem during code review, politely ask the author to add a TODO for the problem you recognized.
+Don't fault the author for not fixing things with code they might be touching. Sometimes untangling code quickly snowballs into a large change which would derail the author from their original intent. If you notice an unrelated problem during code review, politely ask the author to add a TODO for the problem you identified.
 
 ### Trust the author by default
 
-As a reviewer, you don't know all the tradeoffs that author took into account when making their change. Assume there are reasons. It is ok to ask what those reasons are. If you disagree with those reasons, read [these](#Choose-your-battles) [sections](Don't-spend-more-time-discussing-something-than-it-would-take-to-fix) 
+As a reviewer, you don't know all the tradeoffs that author took into account when making their change. Assume there are reasons. It is ok to ask what those reasons are. If you disagree with those reasons, remember to [choose your battles](#Choose-your-battles) and [don't spend too much time on disagreeing](Don't-spend-more-time-discussing-something-than-it-would-take-to-fix) 
 
 ### Choose your battles
 

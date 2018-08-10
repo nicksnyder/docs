@@ -89,8 +89,10 @@ A good code review evaluates
 * Correctness
   * Is this the right solution to the problem?
   * Are there any defects?
-* Readability
+* Quality
   * Is the code easy to understand?
+  * Is the code documented?
+  * Is the code tested?
 
 ### Be humble
 

@@ -61,7 +61,8 @@ If you don't have an autmatic formatter (you should), match the formatting of th
 Code is worth testing if...
 - Tests help you verify that your implementation is correct when you are writing it.
 - The code keeps breaking and you are spending a lot of time maintaining it.
-- The correctness of the code is of particular importance to your application (e.g. security).
+- The correctness of the code is of particular importance to your application or business (e.g. security).
+- You are writing code on a team.
 
 ### Write idiomatic code
 

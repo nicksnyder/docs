@@ -1,6 +1,6 @@
-# Style guide
+# Best practices
 
-An assortment of learnings for what I think it means to be a good engineer.
+An assortment of what I consider to be engineering best practices.
 
 ## Architecture
 

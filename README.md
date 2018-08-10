@@ -122,7 +122,7 @@ Don't fault the author for not fixing things with code they might be touching. S
 
 ### Trust the author by default
 
-As a reviewer, you don't know all the tradeoffs that author took into account when making their change. Assume there are reasons. It is ok to ask what those reasons are. If you disagree with those reasons, remember to [choose your battles](#Choose-your-battles) and [don't spend too much time on disagreeing](Don't-spend-more-time-discussing-something-than-it-would-take-to-fix) 
+As a reviewer, you don't know all the tradeoffs that author took into account when making their change. Assume there are reasons. It is ok to ask what those reasons are. If you disagree with those reasons, remember to [choose your battles](#Choose-your-battles) and [don't spend too much time disagreeing](Don't-spend-more-time-discussing-something-than-it-would-take-to-fix).
 
 ### Choose your battles
 
@@ -134,7 +134,7 @@ Code is never perfect, and code someone else writes will usually be different th
 
 Your job is to solve problems. Pointing out a problem is just the first step. The second, and more important, step is to propose a solution.
 
-Adversarial and exhausting
+Adversarial and exhausting:
 - "Don't do X"
 - "We can't do X because Y"
 
